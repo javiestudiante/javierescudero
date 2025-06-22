@@ -6,11 +6,10 @@
   <title>Javier Escudero Jambrina – Computer Engineering Student</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
 </head>
 <body class="bg-black text-white relative overflow-x-hidden">
-  <div id="particles-js" class="absolute inset-0 z-0"></div>
+  <div id="background-animated" class="absolute inset-0 -z-10"></div>
 
   <header class="text-center py-24 px-4 relative z-10" data-aos="fade-down">
     <h1 class="text-5xl md:text-6xl font-extrabold mb-4 text-white drop-shadow-lg">Javier Escudero Jambrina</h1>
@@ -19,7 +18,7 @@
 
   <main class="max-w-4xl mx-auto px-6 space-y-20 relative z-10">
 
-    <section id="about" data-aos="fade-up" class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.015] shadow-md">
+    <section id="about" data-aos="fade-up">
       <h2 class="text-3xl font-semibold mb-4 border-b border-gray-600 pb-2">About Me</h2>
       <p class="text-gray-300 leading-relaxed">
         I'm a naturally curious person who can spend days immersed in something that truly excites me.
@@ -28,7 +27,7 @@
       </p>
     </section>
 
-    <section id="skills" data-aos="fade-up" class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.015] shadow-md">
+    <section id="skills" data-aos="fade-up">
       <h2 class="text-3xl font-semibold mb-4 border-b border-gray-600 pb-2">Technical Skills</h2>
       <ul class="list-disc list-inside text-gray-300 space-y-1">
         <li>Java, C, C++, Python (basic)</li>
@@ -37,7 +36,7 @@
       </ul>
     </section>
 
-    <section id="soft-skills" data-aos="fade-up" class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.015] shadow-md">
+    <section id="soft-skills" data-aos="fade-up">
       <h2 class="text-3xl font-semibold mb-4 border-b border-gray-600 pb-2">Soft Skills</h2>
       <ul class="list-disc list-inside text-gray-300 space-y-1">
         <li>Problem solver with a calm and focused mindset</li>
@@ -46,17 +45,18 @@
       </ul>
     </section>
 
-    <section id="projects" data-aos="fade-up" class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.015] shadow-md">
+    <section id="projects" data-aos="fade-up">
       <h2 class="text-3xl font-semibold mb-4 border-b border-gray-600 pb-2">Project Experience</h2>
       <p class="text-gray-400 italic">(Coming soon...)</p>
     </section>
 
-    <section id="contact" data-aos="fade-up" class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-6 transition-transform duration-300 hover:scale-[1.015] shadow-md">
+    <section id="contact" data-aos="fade-up" class="relative">
       <h2 class="text-3xl font-semibold mb-4 border-b border-gray-600 pb-2">Contact</h2>
-      <p class="text-gray-300">You can find me on
+      <p class="text-gray-300 mb-12">You can find me on
         <a href="#" class="text-blue-400 underline hover:text-blue-300">LinkedIn</a> and
         <a href="#" class="text-blue-400 underline hover:text-blue-300">GitHub</a>.
       </p>
+      <img src="assets/img/character.svg" alt="Mascot" class="absolute bottom-0 left-0 w-28 md:w-36 animate-blink" />
     </section>
 
   </main>
@@ -66,13 +66,14 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-    particlesJS.load('particles-js', 'particles.json', function () {
-      console.log('Particles.js config loaded');
-    });
     AOS.init({ once: true });
+  </script>
+  <script>
+    window.addEventListener('load', () => {
+      document.body.classList.add('loaded');
+    });
   </script>
 </body>
 </html>

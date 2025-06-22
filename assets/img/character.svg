@@ -1,0 +1,12 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" fill="none" stroke="black" stroke-width="6">
+  <!-- Cabeza -->
+  <path d="M60 150 Q100 80 140 150 Q130 190 70 190 Q60 190 60 150" fill="black"/>
+
+  <!-- Cuernos -->
+  <path d="M60 110 Q20 60 50 40" stroke="black" fill="none"/>
+  <path d="M140 110 Q180 60 150 40" stroke="black" fill="none"/>
+
+  <!-- Ojo -->
+  <ellipse cx="100" cy="140" rx="15" ry="8" fill="white"/>
+  <circle cx="100" cy="140" r="4" fill="black"/>
+</svg>
